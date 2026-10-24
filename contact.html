@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us – VJD App Studio</title>
+  <meta name="description" content="Contact VJD App Studio with questions, feedback or bug reports about our Android apps.">
+  <link rel="canonical" href="https://YOUR-DOMAIN.example/contact.html">
+  <meta name="theme-color" content="#0a1226">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VJD App Studio">
+  <meta property="og:title" content="Contact Us – VJD App Studio">
+  <meta property="og:description" content="Questions, feedback or bug reports about our Android apps.">
+  <meta property="og:url" content="https://YOUR-DOMAIN.example/contact.html">
+  <meta property="og:image" content="https://YOUR-DOMAIN.example/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('vjd-theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact" data-base="">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Questions, feedback or a bug report? We would like to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Ways to reach us</h2>
+          <ul class="contact-list" id="contact-methods"><li class="muted">Loading…</li></ul>
+          <p class="muted">When reporting a problem with an app, please include the app name, its version and your Android version.</p>
+        </div>
+
+        <form class="form-stack" id="contact-form" novalidate aria-label="Contact form">
+          <fieldset>
+            <legend class="visually-hidden">Send us a message</legend>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" maxlength="80" required aria-describedby="cf-name-error">
+              <span class="error" id="cf-name-error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" maxlength="120" required aria-describedby="cf-email-error">
+              <span class="error" id="cf-email-error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="cf-subject">Subject <span class="muted">(optional)</span></label>
+              <input type="text" id="cf-subject" name="subject" maxlength="100">
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" maxlength="2000" required aria-describedby="cf-message-hint cf-message-error"></textarea>
+              <span class="hint" id="cf-message-hint">Minimum 10 characters.</span>
+              <span class="error" id="cf-message-error" role="alert"></span>
+            </div>
+            <button class="btn btn--primary btn--lg" type="submit">Prepare email</button>
+            <p class="muted" style="font-size:.88rem;margin:0">This website has no server. Pressing the button opens your own email app with the message filled in, so nothing is stored here.</p>
+          </fieldset>
+          <div id="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/apps.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

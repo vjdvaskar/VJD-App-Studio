@@ -1,0 +1,7 @@
+# robots.txt for VJD App Studio
+# After you know your real address, replace YOUR-DOMAIN.example below (see README.md > "Set your real domain").
+User-agent: *
+Allow: /
+Disallow: /templates/
+
+Sitemap: https://YOUR-DOMAIN.example/sitemap.xml
